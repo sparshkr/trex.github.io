@@ -1,0 +1,166 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow: none;
+    box-sizing: border-box;
+    
+}
+#scr{
+    color: blue;
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+    margin-top: 5%;
+    margin-left: -2%;
+    padding: 2% 2%;
+
+}
+
+.start
+{
+    display: inline-block;
+    font-size: 434%;
+    margin-left: 34%;
+}
+
+.score{
+    display: inline-block;
+    text-align: end;
+    /* padding-left: 83%; */
+    padding-right: 10%;
+    font-size: 230%;
+    position: relative;
+    bottom: 4%;
+}
+.hiscr{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    /* padding: 1px 1009px; */
+    right: -198px;
+    top: 12%;
+    color: blue;
+    font-size: 184%;
+}
+#trex{
+    position: relative;
+    bottom: -22px;
+    margin-left: 8%;
+    z-index: 10;
+    
+}
+
+#cactus{
+    position: relative;
+    left: 50%;
+    bottom: -15%;
+    z-index: 11;
+}
+
+.anicacti {
+    animation-name: Anicacti;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: none;
+    animation-timing-function: linear;
+}
+
+@keyframes Anicacti {
+    0%{
+        left: 120%;
+       
+    }
+    
+    100%{
+        left: -20%;
+    }
+}
+
+.jump {
+    animation-name: trexjump;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes trexjump {
+    0%{
+        bottom: -18%;
+    }
+    50% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: -18%;
+    }
+}
+
+#ground {
+    position: relative;
+    left: 2px;
+}
+
+.anigr{
+    
+    animation-name: anigro;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anigro{
+   from{
+    left: 0px;
+   }
+   to{
+    left: -1118px;
+   }
+}
+
+
+#name {
+display: flex;
+border: 2px solid red;
+width: 110px;
+border-radius: 100px;
+padding: 2px 6px;
+position: absolute;
+top: 29px;
+left: 45%;
+color: blue;
+}
+
+
+.logout {
+    display: flex;
+    width: 78px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: blue;
+    border: 3px solid red;
+    padding: 2px 13px;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 2px 2px 29px 5px rebeccapurple;
+}
+
+.logout:hover{
+    background-color: aqua;
+    box-shadow: 2px 2px 59px 50px rebeccapurple;
+    transition: 0.7s;
+}
+
+body {
+    transition: background-color 0.5s ease;
+  }
+
+  #cactus {
+    transition: opacity 1.5s ease;
+  }
+  

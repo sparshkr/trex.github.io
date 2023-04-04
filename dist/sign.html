@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <!-- <script src="signup.bundle.js" type="module"></script> -->
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        body {
+    background: url('trex.jpg') no-repeat center center fixed;
+    background-size: cover;
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+}
+
+.signup-box {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  /* background-color: white; */
+  border-radius: 3px;
+}
+
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+.submit {
+  border-radius: 100px;
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: rgb(254, 254, 254);
+  font-size: 18px;
+  cursor: pointer;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.para-2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: -10px;
+}
+.para-2 a {
+  color: #49c1a2;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form class="add" id="a" >
+        <label>First Name</label>
+        <input type="text" placeholder="First Name" name="First" id="first" />
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name" name="Last" id="last" />
+        <label>Email</label>
+        <input type="email" placeholder="email" name="email" id="ema" />
+        <label>Password</label>
+        <input type="password" placeholder="password" name="password" id="pass" />
+        <!-- <label>Confirm Password</label>
+        <input type="password" placeholder="password" /> -->
+        <button class="submit" type="submit">Submit</button>
+        
+            <!-- <input type="submit" /> -->
+        
+      </form>
+      
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+
+    <script src="signup.bundle.js" type="module"></script>
+  </body>
+</html>

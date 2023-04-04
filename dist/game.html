@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Rex Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.bundle.js"></script>
+
+</head>
+
+<body>
+
+    <audio autoplay loop>
+        <!-- <source src="Sound/backgroundmusic.mp3" type="audio/mpeg" id="audio"> -->
+      </audio>
+
+    <div class="container">
+        
+        
+        <div id="name"></div>
+        <button class="logout" id="lgout">Logout</button>
+        <div class="score" id="scr">Score: 0</div>
+        <div class="hiscr" id="hi">Best Score: </div>
+        <div class="start" id="star">T-Rex Game</div>
+
+        
+        <div class="dinotrack">
+            
+            <img src="img/cactus.png" alt="cactus" id="cactus" >
+            <img src="img/dino-stationary.png" alt="T-Rex" id="trex" onkeydown="jumping()">
+            <img src="img/ground.png" alt="ground" id = "ground" >
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
